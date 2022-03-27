@@ -21,7 +21,11 @@ namespace MarsRover.Core.Rover
             Commands = commands;
             PlateauMaxLimitCoordinate = plateauMaxLimitCoordinate;
         }
-        public bool IsNotValidPoint()
+        /// <summary>
+        ///  Gezginin harita koordinatları içinde olup olmadığını kontrol eder.
+        /// </summary>
+        /// <returns> bool </returns>
+        private bool IsNotValidPoint()
         {
             var IsNotValidPoint = RoverCoordinate.X > PlateauMaxLimitCoordinate.X || RoverCoordinate.X < 0 || RoverCoordinate.Y > PlateauMaxLimitCoordinate.Y || RoverCoordinate.Y < 0;
             return IsNotValidPoint;

@@ -2,6 +2,9 @@
 
 namespace MarsRover.Core.Enums
 {
+    /// <summary>
+    ///  Hata kodlarını tek bir yerden yönetmek için kullanılmıştır.
+    /// </summary>
     public enum MarsRoverError
     {
         [Description("Plato's limits have been exceeded.")]
